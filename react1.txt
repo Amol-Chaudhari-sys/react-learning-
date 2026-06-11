@@ -1,0 +1,10 @@
+javascript library build dynamic and interractive  web pages 
+develop by facebook in 2011
+front end development 
+single page application (s.p.a )
+
+2.DOM 
+document object model 
+html dom tree 
+js helps us to modify dom based on user action 
+big applications works with the dom becomes complicated 
