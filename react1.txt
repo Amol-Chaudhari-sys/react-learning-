@@ -8,3 +8,24 @@ document object model
 html dom tree 
 js helps us to modify dom based on user action 
 big applications works with the dom becomes complicated 
+
+4 working 
+creating and updating dom 
+small and reusable component 
+js is impertive 
+    DEFINE STEPS TO REACT DESTINATION   
+react is declerative 
+    DEFINT TARGET UI state 
+
+6 components 
+header footer 
+sidebar 
+
+
+react --> js --> webpages 
+
+create react app 
+setup ide  (integrated development environment )
+create react app 
+project structure 
+

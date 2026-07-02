@@ -1,0 +1,60 @@
+create react app 
+
+    npm create vite@lettest
+
+    cd appname 
+    npm install 
+    npm run dev 
+
+official tool as cra (create react app )
+vite modern tool to create react project 
+     quick and small bundle size 
+     npm run dev 
+cra 
+    npm start 
+
+
+class  vs functions 
+class components 
+    stateful : can manage state 
+    lifecycle : access to lifecycle methods 
+    varbous : more boiler plate code 
+
+
+
+functional components :
+     initialy stateless 
+     can be hook for state and effects
+     simpler and more consist 
+
+     .jsx 
+
+    function app(){
+    return 
+    }
+    export default app ;
+or 
+    export default function app(){
+        return 
+    }
+    import app from "./app"   import singleelement from app
+
+or
+    export function app(){
+        return <h1>hello </h1>
+    }
+
+    import {app} from "./app"   # can import  multiple components fron single jsx file 
+
+
+jsx 
+
+export 
+    export default 
+    multiple export :export function name
+    mixed export :cmbination of both 
+
+boot strap :
+    npm i bootstrap 
+    import "bootstrap/dist/css/bootstrap.min.css";
+    
