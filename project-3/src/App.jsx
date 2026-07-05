@@ -2,8 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import Fooditems from "./components/Fooditems";
 import EmptyMessage from "./components/EmptyMessage";
 
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <h1> Healthy Food </h1>
+      <h1 className="food-heading"> Healthy Food </h1>
       <EmptyMessage items = {fooditems}></EmptyMessage>
       <Fooditems items = {fooditems}></Fooditems>
     </>

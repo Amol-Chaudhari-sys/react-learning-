@@ -96,10 +96,17 @@ map function
 
     Foofitem.jsx
     fooditem = []
-    title = {item}
+    title = {item}    // destructuring 
     ex fooditem= {item}
+    let {fooditems } = propes 
 
     item.jsx
+
+22 css moduls 
+    components same folder 
+    component.module.css 
+    ex 
+        item.module.css 
     
 
     
