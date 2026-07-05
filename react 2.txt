@@ -1,6 +1,9 @@
 create react app 
 
-    npm create vite@lettest
+    npm create vite@latest
+
+    or 
+    npm create vite@8.1.3 
 
     cd appname 
     npm install 
@@ -57,4 +60,46 @@ export
 boot strap :
     npm i bootstrap 
     import "bootstrap/dist/css/bootstrap.min.css";
+
+
+React Fragment 
+avoide extra div 
+all gropping multiple elements without extra DOM 
+returnmultiple elements without wrapping 
+
+
+import React from "react";
+ex return <React.Fragment>
+            </React.Fragment>
+            or <>...</>
+
+map function 
+    fooditem = [   ....   ]
+     {fooditem.map(item => <li>{item}</li>)}
+
+     renders list from array data 
+
+20 conditional randering 
+    tarnary operator 
+    {condition ? statement : other statement}
+    or
+    if else statement 
+     let emptymessage = fooditem.length ===0 ? <H3> i am still hungery </H3> : null ;
+
+    {emptymessage}
+
+    or 
+    {fooditem.length === 0 && <H3> i am still hungery </H3>}
+
+21 passing data via props:
+    props = properties 
+
+    Foofitem.jsx
+    fooditem = []
+    title = {item}
+    ex fooditem= {item}
+
+    item.jsx
+    
+
     
