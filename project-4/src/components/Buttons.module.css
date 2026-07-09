@@ -1,0 +1,17 @@
+.butten {
+  margin: 10px;
+  width: 95px;
+  height: 75px;
+  font-size: 60px;
+  border-radius: 50%;
+  border: 1px solid red ;
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+.number_container{
+  background-color: dimgray;
+  border: 1px solid rgb(245, 0, 0);
+ 
+  margin:25px;
+  border-radius: 20px;
+}

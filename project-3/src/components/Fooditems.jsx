@@ -4,7 +4,7 @@ const Fooditems = (props ) => {
   
   return (<><ul className="list-group">
         {items.map((item) => (
-            <Items key={item} fooditem= {item}></Items>
+            <Items key={item} fooditem= {item} handleBuyButton={(event)=> console.log(item)}></Items>
         ))}
       </ul>
       </>  

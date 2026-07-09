@@ -7,3 +7,9 @@
 .kg-span {
     font-weight: 600;
 }
+.buy-button {
+    border-radius: 8px;
+    float: right;
+    width: 80px;
+    background-color: rgb(244, 222, 25);
+}

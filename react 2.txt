@@ -108,5 +108,41 @@ map function
     ex 
         item.module.css 
     
+23 passing through children 
+    children is the specialtype of prop for passing element into components  
+    access with propes.children 
+    can be : string,number,jsx, components 
 
-    
+    <Container>
+      <h1 className="food-heading"> Healthy Food </h1>
+      <EmptyMessage items = {fooditems}></EmptyMessage>
+      <Fooditems items = {fooditems}></Fooditems>
+    </Container>
+
+    function Container (propes){
+    return <div className={styles["container"]}>
+        {propes.children}
+
+    </div>
+
+24 Handeling Events :
+    events use camelCase 
+    can be function or arrow functiom
+
+
+    onchange event.target.values 
+
+    <button className={styles["buy-button"]} onClick={(event) =>buybuttonclick(event)} >
+        Buy
+         </button>
+
+25 passing functions via propes 
+    parent to child = propes 
+    child to parent = Emit events 
+
+26 managing state :
+    useState // hook 
+      let statesfunctions = useState("this is tsxt to show ");
+        let previoustext = statesfunctions[0];   // initial valur printing 
+        let settextstate = statesfunctions[1];   // print text finel values 
+
