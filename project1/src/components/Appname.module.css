@@ -1,0 +1,12 @@
+.todo-container h1 {
+  font-weight: 700;
+  font-size: 45px;
+  font-style: italic;
+  margin: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  color: red;
+  background-color: black;
+
+}

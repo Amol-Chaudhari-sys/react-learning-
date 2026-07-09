@@ -1,0 +1,148 @@
+create react app 
+
+    npm create vite@latest
+
+    or 
+    npm create vite@8.1.3 
+
+    cd appname 
+    npm install 
+    npm run dev 
+
+official tool as cra (create react app )
+vite modern tool to create react project 
+     quick and small bundle size 
+     npm run dev 
+cra 
+    npm start 
+
+
+class  vs functions 
+class components 
+    stateful : can manage state 
+    lifecycle : access to lifecycle methods 
+    varbous : more boiler plate code 
+
+
+
+functional components :
+     initialy stateless 
+     can be hook for state and effects
+     simpler and more consist 
+
+     .jsx 
+
+    function app(){
+    return 
+    }
+    export default app ;
+or 
+    export default function app(){
+        return 
+    }
+    import app from "./app"   import singleelement from app
+
+or
+    export function app(){
+        return <h1>hello </h1>
+    }
+
+    import {app} from "./app"   # can import  multiple components fron single jsx file 
+
+
+jsx 
+
+export 
+    export default 
+    multiple export :export function name
+    mixed export :cmbination of both 
+
+boot strap :
+    npm i bootstrap 
+    import "bootstrap/dist/css/bootstrap.min.css";
+
+
+React Fragment 
+avoide extra div 
+all gropping multiple elements without extra DOM 
+returnmultiple elements without wrapping 
+
+
+import React from "react";
+ex return <React.Fragment>
+            </React.Fragment>
+            or <>...</>
+
+map function 
+    fooditem = [   ....   ]
+     {fooditem.map(item => <li>{item}</li>)}
+
+     renders list from array data 
+
+20 conditional randering 
+    tarnary operator 
+    {condition ? statement : other statement}
+    or
+    if else statement 
+     let emptymessage = fooditem.length ===0 ? <H3> i am still hungery </H3> : null ;
+
+    {emptymessage}
+
+    or 
+    {fooditem.length === 0 && <H3> i am still hungery </H3>}
+
+21 passing data via props:
+    props = properties 
+
+    Foofitem.jsx
+    fooditem = []
+    title = {item}    // destructuring 
+    ex fooditem= {item}
+    let {fooditems } = propes 
+
+    item.jsx
+
+22 css moduls 
+    components same folder 
+    component.module.css 
+    ex 
+        item.module.css 
+    
+23 passing through children 
+    children is the specialtype of prop for passing element into components  
+    access with propes.children 
+    can be : string,number,jsx, components 
+
+    <Container>
+      <h1 className="food-heading"> Healthy Food </h1>
+      <EmptyMessage items = {fooditems}></EmptyMessage>
+      <Fooditems items = {fooditems}></Fooditems>
+    </Container>
+
+    function Container (propes){
+    return <div className={styles["container"]}>
+        {propes.children}
+
+    </div>
+
+24 Handeling Events :
+    events use camelCase 
+    can be function or arrow functiom
+
+
+    onchange event.target.values 
+
+    <button className={styles["buy-button"]} onClick={(event) =>buybuttonclick(event)} >
+        Buy
+         </button>
+
+25 passing functions via propes 
+    parent to child = propes 
+    child to parent = Emit events 
+
+26 managing state :
+    useState // hook 
+      let statesfunctions = useState("this is tsxt to show ");
+        let previoustext = statesfunctions[0];   // initial valur printing 
+        let settextstate = statesfunctions[1];   // print text finel values 
+
