@@ -8,13 +8,36 @@ import Buttons from './components/buttons'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  let buttonList =['C','1','2','+','3','4','-','5','6','*','7','8','/','9','0','=', '.', '%'];
+
+
+  const [calval , setcalval] = useState("            AAA")
+
+  const onButtonClick=(ButtonText)=>{
+
+    
+    if (ButtonText ==="C"){
+      setcalval("")
+    }
+    else if(ButtonText === "="){
+      
+        const result = eval(calval)
+      setcalval(result)
+    }
+    else{
+      let newval = calval + ButtonText 
+      setcalval(newval)
+
+    }
+    
+
+  }
+ 
+  let buttonList =['C','1','2','+','3','4','-','5','6',' *','7','8','/','9','0','=', '.', '%'];
 
   return (
-    <div className={styles['caclulater_container']}>
-      <Display></Display>
-      <Buttons buttonList={buttonList}></Buttons> 
+    <div className={styles['caclulater_container'] }>
+      <Display calval = {calval}></Display>
+      <Buttons buttonList={buttonList} onButtonClick={onButtonClick}></Buttons> 
     </div>
     
   )
