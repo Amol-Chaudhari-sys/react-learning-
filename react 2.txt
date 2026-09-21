@@ -146,3 +146,41 @@ map function
         let previoustext = statesfunctions[0];   // initial valur printing 
         let settextstate = statesfunctions[1];   // print text finel values 
 
+        const [selected state , setstate ] = useState(initial value );
+27  React icon library :
+        npm install react-icons -save ;
+        import {icons} from "react-icons/fc";
+
+29 inspecting with react dev tool :
+        chrome extension 
+        or browser extension 
+
+30 how rect works 
+    root  component 
+    virtual dom :
+        dom of the react components .
+    Reconciliation process :
+         only reuired nodes are updated 
+
+    react  vs   angular   vs   vue 
+    react : library  
+        develop by facebook 
+    angular : framework complete app development 
+        develop by google 
+    vue : framework
+
+forms :
+     state management
+     handeling chnges 
+     submitions :  event.preventDefault ()
+     validation 
+
+33. use ref :
+    
+
+
+
+
+
+
+

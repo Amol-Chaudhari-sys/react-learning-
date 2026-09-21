@@ -5,8 +5,8 @@
   margin-top: 20px;
   border-radius: 8px;
   border: 2px solid black;
-  background-color: green;
-  color: white;
+  background-color: rgba(0, 255, 0, 0.567);
+  color: rgb(255, 255, 255);
   
 }
 h2{
